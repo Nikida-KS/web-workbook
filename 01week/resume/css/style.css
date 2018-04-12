@@ -1,0 +1,33 @@
+body {
+ background-color: #ffcb0c;
+ font-family: "Montserrat", "Helvetica", sans-serif;
+ line-height: 1em;
+}
+
+header {
+  background-color: #9400d3;
+  margin: 10px;
+  border: 5px solid white;
+  box-shadow: 2px 2px 2px 2px #D3D3D3;
+  text-align: center;
+  color: white;
+  margin-bottom: 2px;
+}
+img{
+  float: right;
+  margin: 10px;
+  padding: 2px;
+}
+h1{font-size: 60px}
+h2{
+  font-size: 35px;
+  font-weight: lighter;
+  }
+section{
+  background-color: white;
+  width: auto;
+  margin: 10px;
+  padding: 5px;
+  box-shadow: 2px 2px 2px 2px #D3d3d3;
+
+}
