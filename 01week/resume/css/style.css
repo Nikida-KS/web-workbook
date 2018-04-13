@@ -30,6 +30,10 @@ h2 {
   font-weight: lighter;
 }
 
+h3{
+  line-height: 0.1em;
+}
+
 section {
   background-color: white;
   max-width: 960px;
