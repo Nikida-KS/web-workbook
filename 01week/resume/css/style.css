@@ -50,25 +50,12 @@ div {
   background-color: #9400d3;
 }
 
-.linkedin {
-  float: left;
-}
-
-.email {
-  float: left;
-}
-
-.facebook {
-  float: left;
-}
-
-.pinterest {
-  float: left;
-}
-
-.clearfix:after {
-  visibility: hidden;
-  display: block;
-  content: "";
-  clear: both;
+.fa {
+    padding: 20px;
+    font-size: 60px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #9400d3;
+    color: white;
 }
