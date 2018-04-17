@@ -15,10 +15,28 @@ header {
   color: white;
 }
 
+section {
+  background-color: white;
+  max-width: 960px;
+  margin: auto;
+  margin-top: 10px;
+  padding: 10px;
+  box-shadow: 2px 2px 2px 2px #D3d3d3;
+}
+
+.clearfix:after {
+   content: "";
+   visibility: hidden;
+   display: block;
+   clear: both;
+}
+
 img {
-  float: right;
+  float: left;
   margin: 10px;
   padding: 2px;
+  border-radius: 50%;
+  border: 5px solid #9400d3;
 }
 
 h1 {
@@ -32,15 +50,6 @@ h2 {
 
 h3{
   line-height: 0.1em;
-}
-
-section {
-  background-color: white;
-  max-width: 960px;
-  margin: auto;
-  margin-top: 10px;
-  padding: 10px;
-  box-shadow: 2px 2px 2px 2px #D3d3d3;
 }
 
 .fa {
@@ -62,4 +71,11 @@ section {
     text-decoration: none;
     background-color: #58d0ff;
     color: white;
+}
+
+.CircleLink{
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  background: #58d0ff;
 }
