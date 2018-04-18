@@ -11,7 +11,7 @@ header {
   border: 5px solid white;
   padding: 10px;
   text-align: center;
-  line-height: 1em;
+  margin-bottom: 0.1em;
   color: white;
 }
 
@@ -22,7 +22,7 @@ img {
 }
 
 h1 {
-  font-size: 60px
+  font-size: 60px;
 }
 
 h2 {
