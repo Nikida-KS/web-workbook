@@ -48,10 +48,6 @@ h2 {
   font-weight: lighter;
 }
 
-h3{
-  line-height: 0.1em;
-}
-
 .fa {
     padding: 20px;
     font-size: 20px;
@@ -75,7 +71,25 @@ h3{
 
 .CircleLink{
   border-radius: 50%;
-  width: 200px;
-  height: 200px;
+  width: 175px;
+  height: 175px;
   background: #58d0ff;
+  float: left;
+  text-align: center;
+  line-height: 130px;
+  color: white;
+  font-size: 20px;
+  margin: 30px 2px 2px 2px;
+}
+
+.CircleLink:hover{
+  border-radius: 50%;
+  width: 175px;
+  height: 175px;
+  background: #9400d3;
+  float: left;
+  text-align: center;
+  line-height: 130px;
+  color: white;
+  font-size: 20px;
 }
