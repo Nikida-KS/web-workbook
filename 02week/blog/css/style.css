@@ -1,0 +1,70 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffcb0c;
+  font-family: "Montserrat", "Helvetica", sans-serif;
+  color: #353535
+}
+
+header {
+  background-color: #9400d3;
+  margin: auto;
+  max-width: 960px;
+  border: 5px solid white;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-family: Arvo, serif;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+nav {
+  background-color: blue;
+  color: white;
+  height: 40px;
+  margin: auto;
+  max-width: 960px;
+  padding: 10px;
+  border: 5px solid white;
+}
+
+h1{
+  font-family: Arvo, serif;
+  font-weight: bolder;
+  font-size: 35px;
+}
+
+h2{
+  font-family: Montserrat, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+.center {
+  max-width: 960px;
+  margin: auto;
+}
+
+section {
+  margin: auto;
+}
+
+.content {
+  width: 60%;
+  margin: auto;
+  float: left;
+}
+
+aside {
+  width: 30%;
+  float: left;
+  background-color: orange;
+}
+
+article {
+  width: 90%;
+  background-color: white;
+  margin: 5px;
+}

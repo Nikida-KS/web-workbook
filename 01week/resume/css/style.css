@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+}
+
 body {
   background-color: #ffcb0c;
   font-family: "Montserrat", "Helvetica", sans-serif;
@@ -53,7 +57,7 @@ div {
 .fa {
     padding: 20px;
     font-size: 60px;
-    width: 20px;
+    width: 60px;
     text-align: center;
     text-decoration: none;
     background-color: #9400d3;
