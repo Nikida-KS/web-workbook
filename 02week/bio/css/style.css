@@ -1,0 +1,95 @@
+body {
+  background-color: #ffcb0c;
+  font-family: "Montserrat", "Helvetica", sans-serif;
+  color: #353535
+}
+
+header {
+  background-color: #9400d3;
+  margin: auto;
+  max-width: 960px;
+  border: 5px solid white;
+  padding: 10px;
+  text-align: center;
+  line-height: 1em;
+  color: white;
+}
+
+section {
+  background-color: white;
+  max-width: 960px;
+  margin: auto;
+  margin-top: 10px;
+  padding: 10px;
+  box-shadow: 2px 2px 2px 2px #D3d3d3;
+}
+
+.clearfix:after {
+   content: "";
+   visibility: hidden;
+   display: block;
+   clear: both;
+}
+
+img {
+  float: left;
+  margin: 10px;
+  padding: 2px;
+  border-radius: 50%;
+  border: 5px solid #9400d3;
+}
+
+h1 {
+  font-size: 60px
+}
+
+h2 {
+  font-size: 35px;
+  font-weight: lighter;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #9400d3;
+    color: white;
+}
+
+.fa:hover {
+    background-size: 20px 20px;
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #58d0ff;
+    color: white;
+}
+
+.circle-link{
+  border-radius: 50%;
+  width: 175px;
+  height: 175px;
+  background: #58d0ff;
+  float: left;
+  text-align: center;
+  line-height: 130px;
+  color: white;
+  font-size: 20px;
+  margin: 30px 2px 2px 2px;
+}
+
+.circle-link:hover{
+  border-radius: 50%;
+  width: 175px;
+  height: 175px;
+  background: #9400d3;
+  float: left;
+  text-align: center;
+  line-height: 130px;
+  color: white;
+  font-size: 20px;
+}
