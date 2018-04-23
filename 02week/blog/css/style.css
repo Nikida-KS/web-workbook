@@ -1,40 +1,33 @@
-*{
-  box-sizing: border-box;
-}
+
 
 body {
-  background-color: #ffcb0c;
+  background-image: url("../images/tryagain.png");
   font-family: "Montserrat", "Helvetica", sans-serif;
   color: #353535
 }
 
 header {
-  background-image: url("../images/interactive-classroom.jpg");
-  background-size: cover;
+  background-color: #f000b8;
   margin: auto;
   max-width: 960px;
-  border: 2px solid white;
-  padding: 10px;
+  box-shadow: 0px 0px 10px #C0C0C0;
+  padding: 5px;
   text-align: center;
   color: white;
-  text-shadow:
-		-2px -2px 0 #000,
-		2px -2px 0 #000,
-		-2px 2px 0 #000,
-		2px 2px 0 #000;
   font-family: Arvo, serif;
   font-size: 60px;
   font-weight: bold;
 }
 
 nav {
-  background-color: blue;
+  background-color: #4261ff;
   color: white;
   height: 40px;
   margin: auto;
+  margin-top: 10px;
   max-width: 960px;
-  padding: 10px;
-  border: 5px solid white;
+  padding: 5px;
+  box-shadow: 0px 0px 10px #C0C0C0;
 }
 
 h1{
@@ -47,6 +40,7 @@ h1{
 h2{
   font-family: Montserrat, Helvetica, sans-serif;
   font-size: 30px;
+  font-weight: lighter;
 }
 
 .center {
@@ -65,8 +59,12 @@ section {
   float: left;
 }
 
+.tall-pic{
+  float: right; 
+}
+
 aside {
-  width: 20%;
+  width: 18%;
   float: left;
   background-color: orange;
   margin: auto;
@@ -75,8 +73,9 @@ aside {
 }
 
 article {
-  width: 95%;
+  width: 90%;
   background-color: white;
   margin: 5px;
   padding: 10px;
+  box-shadow: 0px 0px 10px #C0C0C0;
 }
