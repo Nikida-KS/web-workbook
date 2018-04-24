@@ -1,0 +1,33 @@
+body{
+  background: url("../img/airline.jpg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: Raleway, sans-serif;
+}
+
+a:link { color: #ffffff; text-decoration: none}
+
+nav{
+  background-color: #193A55;
+  width: 100%;
+  border-bottom: 1px solid white;
+  width: 100%;
+  overflow: hidden;
+}
+
+.logo{
+  float: left;
+  margin-right: 20%;
+}
+
+.nav{
+  float: left;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: 40px;
+}
+
+.nav img{
+  margin-right: 5px;
+  margin-top: 2px;
+}
