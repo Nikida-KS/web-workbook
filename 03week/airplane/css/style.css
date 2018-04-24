@@ -1,7 +1,7 @@
 body{
   background: url("../img/airline.jpg") no-repeat center center fixed;
   background-size: cover;
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 a:link { color: #ffffff; text-decoration: none}
@@ -12,6 +12,7 @@ nav{
   border-bottom: 1px solid white;
   width: 100%;
   overflow: hidden;
+  position: fixed;
 }
 
 .logo{
