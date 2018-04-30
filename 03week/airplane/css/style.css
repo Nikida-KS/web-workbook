@@ -1,0 +1,166 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background: url("../img/airline.jpg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: "Raleway", sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+
+a:link { color: #ffffff; text-decoration: none}
+
+nav{
+  background-color: #193A55;
+  width: 100%;
+  border-bottom: 1px solid white;
+  width: 100%;
+  overflow: hidden;
+}
+
+.logo{
+  float: left;
+  margin-right: 20%;
+}
+
+.nav{
+  float: left;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: 40px;
+}
+
+.nav img{
+  margin-right: 5px;
+  margin-top: 2px;
+}
+
+.nav:hover{
+  color: #009282;
+}
+
+.nav:first-of-type{
+  color: #009282;
+}
+
+.searchtool{
+  background-color: #193A55;
+  width: 450px;
+  margin-top: 100px;
+  position: fixed; left: 6%;
+  padding-bottom: 20px;
+}
+
+.searchbuttonstretch{
+  width: 102%;
+  position: relative;left: -1%;
+}
+
+.searchbuttons{
+  width: 33.33333%;
+  height: 50px;
+  border-radius: 5%;
+  background-color: #009282;
+  float: left;
+  padding-left: 50px;
+}
+
+.searchbuttons:hover{
+  background-color: #005FC0;
+}
+
+.searchbuttons:first-of-type{
+  background-color: #005FC0;
+}
+
+.flightinfo1{
+  background-color: #193A55;
+  margin-left: 1%;
+  clear: both;
+  color: white;
+  padding-top: 20px;
+}
+
+.flightinfo2{
+  background-color: #193A55;
+  margin-left: 1%;
+  width: 97.5%;
+  clear: both;
+  padding-left: 2%;
+  color: white;
+  align-items: center;
+  padding-top: 10px; 
+
+}
+
+input{
+  background-color: #193A55;
+  font-family: "Raleway";
+  color: white;
+  width: 44%;
+  height: 50px;
+  border: 2px solid white;
+  border-radius: 5%;
+  margin: 10px;
+  padding: 2%;
+}
+
+input[type="radio" i] {
+  width: 15px;
+  height: 15px;
+  color: white;
+}
+
+select{
+  background-color: #193A55;
+  font-family: "Raleway";
+  color: white;
+  width: 60px;
+  height: 50px;
+  border: 2px solid white;
+  border-radius: 5%;
+  margin: 10px;
+  padding: 2%;
+  float: right;
+}
+
+.passengers{
+  float: left;
+  margin: 0px;
+  background-color: #193A55;
+  margin-left: 1%;
+  width: 48.75%;
+  padding-left: 2%;
+  color: white;
+}
+
+.passengers p {
+  display: inline;
+  float: left;
+  position: relative; left: 20px; top:10px;
+}
+
+.radiobuttons{
+  width: 49%;
+  float: left;
+  display: inline;
+  color: white;
+  padding-top: 15px;
+}
+
+.radiobuttons label {
+  display: inline;
+}
+
+.bigsearchbutton{
+  background-color: #005FC0;
+  width: 400px;
+  color: white;
+  border-radius: 5%;
+  text-align: center;
+  height: 50px;
+  position: relative; left:10px;
+  padding-top: 15px;
+}
