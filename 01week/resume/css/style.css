@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: #ffcb0c;
+  background-image: url("../images/background.png");
   font-family: "Montserrat", "Helvetica", sans-serif;
   color: #353535
 }
@@ -15,8 +15,8 @@ header {
   border: 5px solid white;
   padding: 10px;
   text-align: center;
-  line-height: 1em;
   color: white;
+
 }
 
 img {
@@ -26,7 +26,8 @@ img {
 }
 
 h1 {
-  font-size: 60px
+  font-size: 60px;
+  margin-bottom: 0px;
 }
 
 h2 {
@@ -45,6 +46,7 @@ section {
   margin-top: 10px;
   padding: 10px;
   box-shadow: 2px 2px 2px 2px #D3d3d3;
+  overflow: hidden;
 }
 
 div {
@@ -62,4 +64,8 @@ div {
     text-decoration: none;
     background-color: #9400d3;
     color: white;
+}
+
+.fa:hover {
+  background-color: #58d0ff;
 }
