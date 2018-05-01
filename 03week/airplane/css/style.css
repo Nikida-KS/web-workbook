@@ -51,6 +51,8 @@ nav{
   margin-top: 100px;
   position: fixed; left: 6%;
   padding-bottom: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .searchbuttonstretch{
@@ -61,10 +63,17 @@ nav{
 .searchbuttons{
   width: 33.33333%;
   height: 50px;
-  border-radius: 5%;
   background-color: #009282;
   float: left;
   padding-left: 50px;
+}
+
+#searchleft{
+  border-top-left-radius: 10px;
+}
+
+#searchright{
+  border-top-right-radius: 10px;
 }
 
 .searchbuttons:hover{
@@ -91,7 +100,7 @@ nav{
   padding-left: 2%;
   color: white;
   align-items: center;
-  padding-top: 10px; 
+  padding-top: 10px;
 
 }
 
