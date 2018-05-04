@@ -1,6 +1,6 @@
 body{
   max-width: 980px;
-  margin: 0 auto;
+  margin: 10px auto;
   font-family: "Gothic A1", sans-serif;
 }
 
@@ -11,22 +11,24 @@ h1{
 
 h2{
   font-size: 20px;
-  font-weight: bolder;
   margin: 10px 0px 10px 0px;
+}
+
+h3{
+  font-family: sans-serif;
+  margin: 10px 0 10px 0;
+  font-size: 14px;
+  font-weight: bolder;
 }
 
 p{
   margin: 10px 0px 10px 0px;
 }
 
-main{
-  width: 100%;
-  background-color: red;
-}
-
 section{
   width: 65%;
-  margin: 2%;
+  margin: 10px auto;
+  /* It is "sticking" to the left at before the media query even though I have the body margins set */
   float: left;
 }
 
@@ -34,6 +36,8 @@ aside{
   width: 25%;
   margin: 2%;
   float: left;
+  font-family: sans-serif;
+  font-weight: bolder;
 }
 
 img{
@@ -45,9 +49,39 @@ text-decoration: none;
 color: #4B4B4B;
 }
 
+a:hover{
+  color: #7a7a7a;
+}
+
 button{
   color: white;
   background-color: #4B4B4B;
   height: 35px;
   display: flex;
+}
+
+button:hover{
+  background-color: #7a7a7a;
+}
+
+/* This is where the tablet media query should be starting */
+
+@media (max-width: 768px) {
+
+body{
+  margin: 10px;
+}
+section{
+  width: 100%;
+}
+
+aside{
+  display: none;
+}
+
+
+}
+/* This is where the phone media query should be starting */
+
+@media (max-width: 576px) {
 }
