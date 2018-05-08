@@ -1,0 +1,137 @@
+body{
+  max-width: 980px;
+  margin: 10px auto;
+  font-family: "Gothic A1", sans-serif;
+}
+
+h1{
+  font-size: 28px;
+  margin: 10px 0px 10px 0px;
+}
+
+h2{
+  font-size: 20px;
+  margin: 10px 0px 10px 0px;
+}
+
+h3{
+  font-family: sans-serif;
+  margin: 10px 0 10px 0;
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+p{
+  margin: 10px 0px 10px 0px;
+}
+
+main{
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+section{
+  width: 65%;
+  margin: 10px auto;
+  float: left;
+}
+
+aside{
+  width: 25%;
+  margin: 10px;
+  float: left;
+  font-family: sans-serif;
+  font-weight: bolder;
+}
+
+img{
+  width: 100%;
+}
+
+a{
+text-decoration: none;
+color: #4B4B4B;
+}
+
+a:hover{
+  color: #7a7a7a;
+}
+
+button{
+  color: white;
+  background-color: #4B4B4B;
+  height: 35px;
+  display: flex;
+}
+
+button:hover{
+  background-color: #7a7a7a;
+}
+
+footer{
+  display: none;
+}
+
+/* This is where the tablet media query should be starting */
+
+@media (max-width: 768px) {
+
+body{
+  margin: 10px;
+}
+section{
+  width: 100%;
+}
+
+aside{
+  display: none;
+}
+
+footer{
+  display: none;
+}
+
+}
+/* This is where the phone media query should be starting */
+
+@media (max-width: 576px) {
+
+footer{
+  display: flex;
+  width: 100%;
+  color: white;
+  background-color: #4B4B4B;
+  justify-content: space-between;
+}
+
+footer li{
+  border-bottom: 1px solid white;
+/* this puts a hr betwixt each item without having to write it in the html */
+  list-style-type: none;
+/* this takes the bullets away */
+}
+
+footer a{
+color: white;
+font-weight: lighter;
+}
+
+footer h2{
+  font-family: sans-serif;
+  font-weight: bold;
+  margin:  10px 0 20px 0;
+}
+/* I had to change the font for this because the one I used didn't have a bold option */
+
+.footerlinks{
+  width: 35%;
+}
+
+.fa{
+  float: right;
+  margin-right: 12px;
+}
+/* this class is for the font awesome icons for the social media buttons */
+
+}
