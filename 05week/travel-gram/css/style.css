@@ -1,3 +1,10 @@
+/* these styles will apply to all of the content  */
+h1{
+  font-family: Sanchez, serif;
+  font-size: 60px;
+  font-weight: bolder;
+}
+
 h2{
   font-family: Raleway, serif;
   font-size: 24px;
@@ -10,6 +17,16 @@ p{
   font-size: 16px;
   margin: 10px 0 10px 0;
 }
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+
+
+/* this is for each of the articles */
 
 .box {
   background: #white;
@@ -35,6 +52,24 @@ article {
   display: flex;
   justify-content: space-between;
 }
+
+/* icons are better to use because they load much faster than images */
+.fa {
+    color: black;
+    margin-right: 5px;
+    font-size: 22px;
+  }
+
+button{
+  background-color: #2CCBDC;
+  max-width: 60%;
+  color:white;
+  font-family: Raleway;
+  font-size: 14px;
+  padding: 8px;
+}
+
+/* I have to make all of these so I can assign them to the grid  */
 
 .box1 {
   grid-area: box1;
@@ -69,7 +104,7 @@ article {
 }
 
 /* Extra Small and up (Portrait Phones) */
-
+/* this layout will sort all of the articles in a single column */
 .grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -114,8 +149,14 @@ article {
     "box9 box10";
   }
 
+/* this will change the article to have the text next to the image. still needs
+some work styling the image to not be 100%  */
   .box:nth-of-type(4n) {
     flex-direction: row;
+  }
+
+  h1{
+    font-size: 80px;
   }
 
 }
@@ -153,6 +194,7 @@ article {
     flex-direction: row;
   }
 
+/* I had to add this because of the different stylings for tablet view */
   .box:nth-of-type(4n) {
     flex-direction: column;
   }
