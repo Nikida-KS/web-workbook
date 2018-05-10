@@ -1,4 +1,5 @@
 /* these styles will apply to all of the content  */
+
 h1{
   font-family: Sanchez, serif;
   font-size: 60px;
@@ -22,7 +23,7 @@ header{
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 200px;
+  height: 100px;
 }
 
 
@@ -33,6 +34,7 @@ header{
   padding: 10px;
   border: 1px solid black;
   margin: 5px;
+  box-shadow: 2px 2px 2px 2px #eeeeee;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -42,6 +44,12 @@ header{
 .box img {
   max-width: 100%;
   object-position: center;
+}
+
+.box:hover{
+  position: relative;
+  left: -3px;
+  top: -3px;
 }
 
 article {
@@ -67,6 +75,10 @@ button{
   font-family: Raleway;
   font-size: 14px;
   padding: 8px;
+}
+
+button:hover{
+  background-color: black;
 }
 
 /* I have to make all of these so I can assign them to the grid  */
@@ -155,6 +167,10 @@ some work styling the image to not be 100%  */
     flex-direction: row;
   }
 
+  header{
+    height: 200px;
+  }
+
   h1{
     font-size: 80px;
   }
@@ -165,7 +181,7 @@ some work styling the image to not be 100%  */
 
 @media (min-width: 992px) {
   body{
-    width: 960px;
+    width: 980px;
     margin: 0 auto;
   }
 
