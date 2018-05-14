@@ -1,0 +1,71 @@
+.square {
+  height: 50px;
+  width: 50px;
+  margin: 10px auto;
+  transition: all 2s linear;
+}
+
+.trigger{
+  width: 50px;
+  margin: 0 auto;
+}
+
+.trigger:hover .square:nth-of-type(even){
+  height: 100px;
+  width: 100px;
+  transform: translate(500px, 0) rotate(2turn);
+}
+
+.trigger:hover .square:nth-of-type(odd){
+  height: 25px;
+  width: 25px;
+  transform: translate(-500px, 0) rotate(-3turn);
+}
+
+#blue{
+  background-color: #2CCBDC;
+}
+
+#orchid{
+  background-color: #be00ff;
+}
+
+#slate{
+  background-color: #808080;
+}
+
+#blush{
+  background-color: #fbd1a7;
+}
+
+#purple{
+  background-color: #a67f78;
+}
+
+#purplefriend{
+  background-color: #9C7069;
+}
+
+#mint{
+  background-color: #cbffcd;
+}
+
+#teal{
+  background-color: #9bffa4;
+}
+
+#limey{
+  background-color: #4fffb2;
+}
+
+#tealer{
+  background-color: #0fb784;
+}
+
+#purpleburp{
+  background-color: #840fb7;
+}
+
+#pink{
+  background-color: #b70f96;
+}

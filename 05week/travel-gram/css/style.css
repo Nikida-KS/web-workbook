@@ -1,1 +1,223 @@
+/* these styles will apply to all of the content  */
 
+h1{
+  font-family: Sanchez, serif;
+  font-size: 60px;
+  font-weight: bolder;
+}
+
+h2{
+  font-family: Raleway, serif;
+  font-size: 24px;
+  font-weight: bolder;
+  margin: 10px 0 10px 0;
+}
+
+p{
+  font-family: Raleway, serif;
+  font-size: 16px;
+  margin: 10px 0 10px 0;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+
+
+/* this is for each of the articles */
+
+.box {
+  background: #white;
+  padding: 10px;
+  border: 1px solid black;
+  margin: 5px;
+  box-shadow: 2px 2px 2px 2px #eeeeee;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.box img {
+  max-width: 100%;
+  object-position: center;
+}
+
+.box:hover{
+  position: relative;
+  left: -3px;
+  top: -3px;
+}
+
+article {
+  margin: 10px;
+}
+
+.article-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* icons are better to use because they load much faster than images */
+.fa {
+    color: black;
+    margin-right: 5px;
+    font-size: 22px;
+  }
+
+button{
+  background-color: #2CCBDC;
+  max-width: 60%;
+  color:white;
+  font-family: Raleway;
+  font-size: 14px;
+  padding: 8px;
+}
+
+button:hover{
+  background-color: black;
+}
+
+/* I have to make all of these so I can assign them to the grid  */
+
+.box1 {
+  grid-area: box1;
+}
+
+.box2 {
+  grid-area: box2;
+}
+
+.box3 {
+  grid-area: box3;
+}
+
+.box4 {
+  grid-area: box4;
+}
+
+.box5 {
+  grid-area: box5;
+}
+
+.box6 {
+  grid-area: box6;
+}
+
+.box7 {
+  grid-area: box7;
+}
+
+.box8 {
+  grid-area: box8;
+}
+
+/* Extra Small and up (Portrait Phones) */
+/* this layout will sort all of the articles in a single column */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "box1"
+  "box2"
+  "box3"
+  "box4"
+  "box5"
+  "box6"
+  "box7"
+  "box8"
+  "box9"
+  "box10";
+}
+
+/* Small and up (Landscape Phones) */
+
+@media (min-width: 576px) {
+  /* Just use the same as Extra Small above  */
+}
+
+/* Medium and up (Tablets) */
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "box1 box1"
+    "box1 box1"
+    "box1 box1"
+    "box2 box3"
+    "box2 box3"
+    "box4 box4"
+    "box5 box5"
+    "box5 box5"
+    "box5 box5"
+    "box6 box7"
+    "box6 box7"
+    "box8 box8"
+    "box9 box10"
+    "box9 box10";
+  }
+
+/* this will change the article to have the text next to the image. still needs
+some work styling the image to not be 100%  */
+  .box:nth-of-type(4n) {
+    flex-direction: row;
+  }
+
+  header{
+    height: 200px;
+  }
+
+  h1{
+    font-size: 80px;
+  }
+
+}
+
+/* Large and up (Desktops) */
+
+@media (min-width: 992px) {
+  body{
+    width: 980px;
+    margin: 0 auto;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "box1 box1 box2 box2"
+    "box1 box1 box2 box2"
+    "box3 box3 box4 box5"
+    "box3 box3 box4 box5"
+    "box3 box3 box6 box6"
+    "box7 box8 box9 box10"
+    "box7 box8 box9 box10"
+    "box7 box8 box9 box10";
+  }
+
+  .box:nth-of-type(1) {
+    flex-direction: row;
+  }
+
+  .box:nth-of-type(2) {
+    flex-direction: row;
+  }
+
+  .box:nth-of-type(6) {
+    flex-direction: row;
+  }
+
+/* I had to add this because of the different stylings for tablet view */
+  .box:nth-of-type(4n) {
+    flex-direction: column;
+  }
+}
+
+/* Extra Large and up (Wide Screen Desktops) */
+
+@media (min-width: 1200px) {
+  /* Just use the same as Large above  */
+}
