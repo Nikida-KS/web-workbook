@@ -2,7 +2,7 @@
 
 
 window.onload = function(){
-
+//these are all the functions that run at the beginning
   itemAlert();
   insertItemCounter();
   insertAddItem();
@@ -15,13 +15,13 @@ function listCount(){
   return list[0].children.length;
 }
 
-//implements task 1
+//does the cart count pop up
 function itemAlert () {
   let list = document.getElementsByTagName("ul");
-  alert("words" + listCount());
+  alert("there are " + listCount() + " items in your shopping cart");
 }
 
-//implements task 2
+//creates and inserts the h2 item counter.
 function insertItemCounter () {
   let newh2 = document.createElement('h2');
   let list = document.getElementsByTagName("ul");
@@ -51,20 +51,24 @@ function insertAddItem () {
   newButton.onclick = addItem;
 }
 
+//this is the function that adds the items.
 function addItem(event){
   let newItemText = document.getElementById("input-text");
   let newItem = document.createElement("li");
   newItem.innerHTML= newItemText.value;
   document.getElementsByTagName("ul")[0].appendChild(newItem);
+  document.getElementById('input-text').value='';
   insertRemoveItem(newItem);
   updateItemCounter();
 }
 
+//updates the item counter when an item is added or removed
 function updateItemCounter(){
   let h2 = document.getElementById("item-count");
   h2.innerHTML = 'You have ' + document.getElementsByTagName('ul')[0].children.length + ' items in your shopping cart';
 }
 
+//creates the actual remove button
 function insertRemoveItem (items) {
   let removeButton= document.createElement('button');
   removeButton.innerHTML = "Remove";
@@ -73,11 +77,13 @@ function insertRemoveItem (items) {
 
 }
 
+//removes the things
 function eraseItem(){
   this.parentNode.remove();
   updateItemCounter();
 }
 
+//puts the remove button on the itesm that are already there!
 function insertRemoveItemExistingItems(){
   let cart = document.getElementById("cart");
   for (let i = 0; i < cart.children.length; i++){
