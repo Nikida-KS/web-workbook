@@ -1,6 +1,7 @@
 'use strict';
 
 $(document).ready(function() {
+
   //picks things up
   $('.draggable').draggable({
     revert: 'invalid'
@@ -30,4 +31,9 @@ $(document).ready(function() {
     $("#announce-game-won").empty();
     location.reload();
   })
+
+  //   let $clicks = 0;
+  // $(".draggable").click(function(){
+  //   $("#counter").text(`${clicks} clicks`)
+  // })
 });
